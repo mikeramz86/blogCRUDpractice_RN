@@ -7,11 +7,10 @@ import { Feather } from '@expo/vector-icons';
 
 
 const IndexScreen = ({navigation})  => {
-    const {state, addBlogPost, deleteBlogPost} = useContext(Context)
+    const {state, deleteBlogPost} = useContext(Context)
 
     return (
         <View>
-            < Button title="Add Add Blog Post" onPress={addBlogPost}/>
             <FlatList
                 data={state}
                 // function that call every object in arr
